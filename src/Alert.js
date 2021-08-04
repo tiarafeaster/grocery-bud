@@ -8,11 +8,7 @@ function Alert({ type, msg, removeAlert, list }) {
     return () => clearTimeout(timeout);
   }, [list]);
 
-  return (
-    <div>
-      <p className={`alert alert-${type}`}>{msg}</p>
-    </div>
-  );
+  return <p className={`alert alert-${type}`}>{msg}</p>;
 }
 
 export default Alert;
